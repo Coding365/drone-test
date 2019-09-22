@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://docker-runner.docs.drone.io/examples/language/golang/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Go (with Modules) | Drone</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="copyright" content="">
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://docker-runner.docs.drone.io/favicon.png">
+<link rel="stylesheet" href="./Go (with Modules) _ Drone_files/docsearch.min.css">
+<link rel="stylesheet" href="./Go (with Modules) _ Drone_files/style.css">
+<link rel="stylesheet" href="./Go (with Modules) _ Drone_files/css">
+
+
+
+
+
+  </head>
+  <body>
+        <header class="header">
+        <div class="branding">
+            <button class="menu" aria-hidden="true"></button>
+            <a class="logo" href="https://docker-runner.docs.drone.io/" aria-label="Documentation">
+                <img src="./Go (with Modules) _ Drone_files/logo.svg">
+            </a>
+        </div>
+        <div class="search">
+            <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input type="text" class="aa-hint" readonly="" aria-hidden="true" autocomplete="off" spellcheck="false" tabindex="-1" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(255, 255, 255, 0.1);"><input type="text" id="search-input" placeholder="Search the Drone Docker Runner documentation ..." class="aa-input" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="both" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: system-ui; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="aa-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="aa-dataset-1"></div></span></span>
+        </div>
+    </header>
+    <section class="sidebar">
+    <header aria-hidden="true">
+        <button class="close"></button>
+    </header>
+    <div class="back">
+        <a href="https://docs.drone.io/">Main Documentation</a>
+    </div>
+    <div class="title">
+        <a href="https://docker-runner.docs.drone.io/">Docker runner</a>
+    </div>
+    
+
+
+
+
+
+<nav class="tree">
+
+    <ul>
+    
+    
+
+    
+
+    
+
+    
+    <li>
+        <details>
+            <summary>
+                <a href="https://docker-runner.docs.drone.io/installation/">Installation</a>
+            </summary>
+            <ul>
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/installation/install_linux/">Install on Linux</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/installation/install_windows/">Install on Windows</a>
+    </li>
+    
+
+            
+
+            
+            
+    
+
+    
+
+    
+    <li class="hide_children">
+        <a href="https://docker-runner.docs.drone.io/installation/reference/">Configuration Reference</a>
+    </li>
+    
+
+            
+            </ul>
+        </details>
+    </li>
+    
+
+    </ul>
+    
+    <ul>
+    
+    
+
+    
+
+    
+
+    
+    <li>
+        <details>
+            <summary>
+                <a href="https://docker-runner.docs.drone.io/configuration/">Configuration</a>
+            </summary>
+            <ul>
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/overview/">Overview</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/trigger/">Triggers</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/platform/">Platform</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/workspace/">Workspace</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/cloning/">Cloning</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/steps/">Steps</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/plugins/">Plugins</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/services/">Services</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/images/">Images</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/parallelism/">Parallelism</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/conditions/">Conditions</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/routing/">Routing</a>
+    </li>
+    
+
+            
+
+            
+            
+    
+
+    
+
+    
+
+    
+    <li>
+        <details>
+            <summary>
+                <a href="https://docker-runner.docs.drone.io/configuration/environment/">Environment</a>
+            </summary>
+            <ul>
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/environment/overview/">Environment</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/environment/substitution/">Substitution</a>
+    </li>
+    
+
+            
+
+            
+            
+    
+
+    
+
+    
+    <li class="hide_children">
+        <a href="https://docker-runner.docs.drone.io/configuration/environment/variables/">Environment Reference</a>
+    </li>
+    
+
+            
+            </ul>
+        </details>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+
+    
+    <li>
+        <details>
+            <summary>
+                <a href="https://docker-runner.docs.drone.io/configuration/volumes/">Volumes</a>
+            </summary>
+            <ul>
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/volumes/host/">Host Volumes</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/volumes/temporary/">Temporary Volumes</a>
+    </li>
+    
+
+            
+
+            
+            </ul>
+        </details>
+    </li>
+    
+
+            
+            </ul>
+        </details>
+    </li>
+    
+
+    </ul>
+    
+    <ul>
+    
+    
+
+    
+
+    
+    <li class="hide_children">
+        <a href="https://docker-runner.docs.drone.io/specification/">Specification</a>
+    </li>
+    
+
+    </ul>
+    
+    <ul>
+    
+    
+
+    
+
+    
+
+    
+    <li>
+        <details open="">
+            <summary>
+                <a href="https://docker-runner.docs.drone.io/examples/">Examples</a>
+            </summary>
+            <ul>
+            
+
+            
+            
+    
+
+    
+
+    
+    <li class="selected active hide_children">
+        <a href="https://docker-runner.docs.drone.io/examples/language/">Languages</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li class="hide_children">
+        <a href="https://docker-runner.docs.drone.io/examples/service/">Services</a>
+    </li>
+    
+
+            
+            </ul>
+        </details>
+    </li>
+    
+
+    </ul>
+    
+    <ul>
+    
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/support/">Support</a>
+    </li>
+    
+
+    </ul>
+    
+    <ul>
+    
+    
+
+    
+
+    
+
+    
+    <li>
+        <details>
+            <summary>
+                <a href="https://docker-runner.docs.drone.io/questions/">Questions</a>
+            </summary>
+            <ul>
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/questions/usage/how-to-limit-concurrency/"></a>
+    </li>
+    
+
+            
+
+            
+            </ul>
+        </details>
+    </li>
+    
+
+    </ul>
+    
+</nav>
+
+</section>
+
+    <main>
+        <article>
+            <header>
+                <div class="breadcrumb">
+    <div class="crumb">
+        <a href="https://docker-runner.docs.drone.io/">Docker runner</a>
+    </div>
+    
+        <div class="crumb">
+            <a href="https://docker-runner.docs.drone.io/examples/">Examples</a>
+        </div>
+        
+        <div class="crumb">
+            <a href="https://docker-runner.docs.drone.io/examples/language/">Languages</a>
+        </div>
+        
+</div>
+
+                <h1>Go (with Modules)</h1>
+            </header>
+            <section class="content">
+
+<p>This guide covers configuring continuous integration pipelines for Go projects that use Go Modules. If you’re new to Drone please read our Tutorial and build configuration guides first.</p>
+
+<h1 id="build-and-test">Build and Test</h1>
+
+<p>In the below example we demonstrate a pipeline that executes <code>go test</code> and <code>go build</code> commands. These commands are executed inside the golang Docker container, downloaded at runtime from DockerHub.</p>
+
+<pre><code>kind: pipeline
+name: default
+
+steps:
+- name: test
+  image: golang
+  commands:
+  - go test
+  - go build
+</code></pre>
+
+<p>Please note that you can use any Docker image in your pipeline from any Docker registry. You can use the official golang <a href="https://hub.docker.com/r/_/golang/">images</a>, or your can bring your own.</p>
+
+<h1 id="dependencies">Dependencies</h1>
+
+<p>If you decide to split your pipeline into multiple steps you need to make sure each step has access to project dependencies. Dependencies are downloaded to <code>/go</code> which is outside the shared workspace. Create a named volume to share this directory with all pipeline steps:</p>
+
+<div class="highlight"><pre class="chroma"><code class="language-yaml" data-lang="yaml">kind<span class="p">:</span><span class="w"> </span>pipeline<span class="w">
+</span><span class="w"></span>name<span class="p">:</span><span class="w"> </span>default<span class="w">
+</span><span class="w">
+</span><span class="w"></span>steps<span class="p">:</span><span class="w">
+</span><span class="w"></span>-<span class="w"> </span>name<span class="p">:</span><span class="w"> </span>test<span class="w">
+</span><span class="w">  </span>image<span class="p">:</span><span class="w"> </span>golang<span class="w">
+</span><span class="hl"><span class="w">  </span>volumes<span class="p">:</span><span class="w">
+</span></span><span class="hl"><span class="w">  </span>-<span class="w"> </span>name<span class="p">:</span><span class="w"> </span>deps<span class="w">
+</span></span><span class="hl"><span class="w">    </span>path<span class="p">:</span><span class="w"> </span>/go<span class="w">
+</span></span><span class="w">  </span>commands<span class="p">:</span><span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>go<span class="w"> </span>test<span class="w">
+</span><span class="w">
+</span><span class="w"></span>-<span class="w"> </span>name<span class="p">:</span><span class="w"> </span>build<span class="w">
+</span><span class="w">  </span>image<span class="p">:</span><span class="w"> </span>golang<span class="w">
+</span><span class="hl"><span class="w">  </span>volumes<span class="p">:</span><span class="w">
+</span></span><span class="hl"><span class="w">  </span>-<span class="w"> </span>name<span class="p">:</span><span class="w"> </span>deps<span class="w">
+</span></span><span class="hl"><span class="w">    </span>path<span class="p">:</span><span class="w"> </span>/go<span class="w">
+</span></span><span class="w">  </span>commands<span class="p">:</span><span class="w">
+</span><span class="w">  </span>-<span class="w"> </span>go<span class="w"> </span>build<span class="w">
+</span><span class="w">
+</span><span class="hl"><span class="w"></span>volumes<span class="p">:</span><span class="w">
+</span></span><span class="hl"><span class="w"></span>-<span class="w"> </span>name<span class="p">:</span><span class="w"> </span>deps<span class="w">
+</span></span><span class="hl"><span class="w">  </span>temp<span class="p">:</span><span class="w"> </span>{}</span></code></pre></div>
+
+<h1 id="test-multiple-versions">Test Multiple Versions</h1>
+
+<p>You can use Drone’s multi-pipeline feature to concurrently test against multiple versions of Go. This is equivalent to matrix capabilities found in other continuous integration systems.</p>
+
+<pre><code>---
+kind: pipeline
+name: go-1-11
+
+steps:
+- name: test
+  image: golang:1.11
+  commands:
+  - go get
+  - go test
+
+---
+kind: pipeline
+name: go-1-10
+
+steps:
+- name: test
+  image: golang:1.10
+  commands:
+  - go get
+  - go test
+
+...
+</code></pre>
+
+<p>If you find this syntax too verbose we recommend using jsonnet. If you are unfamiliar with jsonnet please read our guide.</p>
+
+<pre><code>local Pipeline(name, image) = {
+  kind: "pipeline",
+  name: name,
+  steps: [
+    {
+      name: "test",
+      image: image,
+      commands: [
+        "go get",
+        "go test"
+      ]
+    }
+  ]
+};
+
+[
+  Pipeline("go-1-11", "golang:1.11"),
+  Pipeline("go-1-12", "golang:1.12"),
+]
+</code></pre>
+
+<h1 id="test-multiple-architectures">Test Multiple Architectures</h1>
+
+<p>You can use Drone’s multi-pipeline feature to concurrently test your code on multiple architectures and operating systems.</p>
+
+<pre><code>---
+kind: pipeline
+name: test-on-amd64
+
+platform:
+  arch: amd64
+
+steps:
+- name: test
+  image: golang
+  commands:
+  - go get
+  - go test
+
+---
+kind: pipeline
+name: test-on-arm64
+
+platform:
+  arch: arm64
+
+steps:
+- name: test
+  image: golang
+  commands:
+  - go get
+  - go test
+
+...
+</code></pre>
+
+<p>If you find this syntax too verbose we recommend using jsonnet. If you are unfamiliar with jsonnet please read our guide.</p>
+</section>
+            <footer class="next-prev">
+    
+    <a href="https://docker-runner.docs.drone.io/examples/language/golang_gopath/" class="prev">
+        <span class="icon"></span>
+        <span class="type">Previous</span>
+        <span class="name">Go (with Gopath)</span>
+    </a>
+    
+
+    
+    <a href="https://docker-runner.docs.drone.io/examples/language/gradle/" class="next">
+        <span class="type">Next</span>
+        <span class="name">Gradle</span>
+        <span class="icon"></span>
+    </a>
+    
+</footer>
+        </article>
+
+        <aside>
+    
+    <nav class="table-of-contents">
+        <header>Contents</header>
+        <nav id="TableOfContents">
+<ul>
+<li><a href="https://docker-runner.docs.drone.io/examples/language/golang/#build-and-test">Build and Test</a></li>
+<li><a href="https://docker-runner.docs.drone.io/examples/language/golang/#dependencies">Dependencies</a></li>
+<li><a href="https://docker-runner.docs.drone.io/examples/language/golang/#test-multiple-versions">Test Multiple Versions</a></li>
+<li><a href="https://docker-runner.docs.drone.io/examples/language/golang/#test-multiple-architectures">Test Multiple Architectures</a></li>
+</ul>
+</nav>
+    </nav>
+    
+</aside>
+    </main>
+    
+<div class="overlay" aria-hidden="true"></div>
+
+
+<script>
+    function toggle(el) {
+        if (el.classList.contains("open")) {
+            el.classList.remove("open");
+        } else {
+            el.classList.add("open");
+        }
+    };
+    function toggleSidebar(e) {
+        toggle(document.querySelector(".sidebar"));
+        toggle(document.querySelector(".overlay"));
+    }
+    document.querySelector(".overlay").addEventListener("click", toggleSidebar);
+    document.querySelector("header .menu").addEventListener("click", toggleSidebar);
+    document.querySelector(".sidebar header button").addEventListener("click", toggleSidebar);
+</script>
+
+
+<script src="./Go (with Modules) _ Drone_files/autocomplete.js"></script>
+<script src="./Go (with Modules) _ Drone_files/fuse.js"></script>
+<script>
+var options = {
+  shouldSort: true,
+  tokenize: false,
+  threshold: 0.6,
+  location: 0,
+  distance: 100,
+  maxPatternLength: 32,
+  minMatchCharLength: 1,
+  keys: [
+    "title",
+    "tags",
+    "content"
+  ]
+};
+
+var index;
+autocomplete('#search-input', {
+    hint: true,
+    debounce: 250,
+    cache: true,
+    debug: window.location.hostname === "localhost",
+}, [
+    {
+        displayKey: function(suggestion) {
+            return suggestion.title
+        },
+        source: function(query, callback) {
+            if (!index) {
+                fetch("/index.json")
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(items) {
+                    index = new Fuse(items, options);
+                    var results = index.search(query);
+                    callback(results && results.slice(0, 5));
+                });
+            } else {
+                var results = index.search(query);
+                callback(results && results.slice(0, 5));
+            }
+        }
+    }]).on('autocomplete:selected', function(event, suggestion, dataset) {
+        window.location.href = suggestion.permalink;
+    });
+</script>
+
+  
+
+</body></html>

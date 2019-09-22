@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)https://docker-runner.docs.drone.io/configuration/plugins/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Plugins | Drone</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="copyright" content="">
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://docker-runner.docs.drone.io/favicon.png">
+<link rel="stylesheet" href="./Plugins _ Drone_files/docsearch.min.css">
+<link rel="stylesheet" href="./Plugins _ Drone_files/style.css">
+<link rel="stylesheet" href="./Plugins _ Drone_files/css">
+
+
+
+
+
+  </head>
+  <body>
+        <header class="header">
+        <div class="branding">
+            <button class="menu" aria-hidden="true"></button>
+            <a class="logo" href="https://docker-runner.docs.drone.io/" aria-label="Documentation">
+                <img src="./Plugins _ Drone_files/logo.svg">
+            </a>
+        </div>
+        <div class="search">
+            <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input type="text" class="aa-hint" readonly="" aria-hidden="true" autocomplete="off" spellcheck="false" tabindex="-1" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(255, 255, 255, 0.1);"><input type="text" id="search-input" placeholder="Search the Drone Docker Runner documentation ..." class="aa-input" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="both" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: system-ui; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="aa-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="aa-dataset-1"></div></span></span>
+        </div>
+    </header>
+    <section class="sidebar">
+    <header aria-hidden="true">
+        <button class="close"></button>
+    </header>
+    <div class="back">
+        <a href="https://docs.drone.io/">Main Documentation</a>
+    </div>
+    <div class="title">
+        <a href="https://docker-runner.docs.drone.io/">Docker runner</a>
+    </div>
+    
+
+
+
+
+
+<nav class="tree">
+
+    <ul>
+    
+    
+
+    
+
+    
+
+    
+    <li>
+        <details>
+            <summary>
+                <a href="https://docker-runner.docs.drone.io/installation/">Installation</a>
+            </summary>
+            <ul>
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/installation/install_linux/">Install on Linux</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/installation/install_windows/">Install on Windows</a>
+    </li>
+    
+
+            
+
+            
+            
+    
+
+    
+
+    
+    <li class="hide_children">
+        <a href="https://docker-runner.docs.drone.io/installation/reference/">Configuration Reference</a>
+    </li>
+    
+
+            
+            </ul>
+        </details>
+    </li>
+    
+
+    </ul>
+    
+    <ul>
+    
+    
+
+    
+
+    
+
+    
+    <li>
+        <details open="">
+            <summary>
+                <a href="https://docker-runner.docs.drone.io/configuration/">Configuration</a>
+            </summary>
+            <ul>
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/overview/">Overview</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/trigger/">Triggers</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/platform/">Platform</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/workspace/">Workspace</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/cloning/">Cloning</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/steps/">Steps</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li class="selected active">
+        <a href="https://docker-runner.docs.drone.io/configuration/plugins/">Plugins</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/services/">Services</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/images/">Images</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/parallelism/">Parallelism</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/conditions/">Conditions</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/routing/">Routing</a>
+    </li>
+    
+
+            
+
+            
+            
+    
+
+    
+
+    
+
+    
+    <li>
+        <details>
+            <summary>
+                <a href="https://docker-runner.docs.drone.io/configuration/environment/">Environment</a>
+            </summary>
+            <ul>
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/environment/overview/">Environment</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/environment/substitution/">Substitution</a>
+    </li>
+    
+
+            
+
+            
+            
+    
+
+    
+
+    
+    <li class="hide_children">
+        <a href="https://docker-runner.docs.drone.io/configuration/environment/variables/">Environment Reference</a>
+    </li>
+    
+
+            
+            </ul>
+        </details>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+
+    
+    <li>
+        <details>
+            <summary>
+                <a href="https://docker-runner.docs.drone.io/configuration/volumes/">Volumes</a>
+            </summary>
+            <ul>
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/volumes/host/">Host Volumes</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/volumes/temporary/">Temporary Volumes</a>
+    </li>
+    
+
+            
+
+            
+            </ul>
+        </details>
+    </li>
+    
+
+            
+            </ul>
+        </details>
+    </li>
+    
+
+    </ul>
+    
+    <ul>
+    
+    
+
+    
+
+    
+    <li class="hide_children">
+        <a href="https://docker-runner.docs.drone.io/specification/">Specification</a>
+    </li>
+    
+
+    </ul>
+    
+    <ul>
+    
+    
+
+    
+
+    
+
+    
+    <li>
+        <details>
+            <summary>
+                <a href="https://docker-runner.docs.drone.io/examples/">Examples</a>
+            </summary>
+            <ul>
+            
+
+            
+            
+    
+
+    
+
+    
+    <li class="hide_children">
+        <a href="https://docker-runner.docs.drone.io/examples/language/">Languages</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li class="hide_children">
+        <a href="https://docker-runner.docs.drone.io/examples/service/">Services</a>
+    </li>
+    
+
+            
+            </ul>
+        </details>
+    </li>
+    
+
+    </ul>
+    
+    <ul>
+    
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/support/">Support</a>
+    </li>
+    
+
+    </ul>
+    
+    <ul>
+    
+    
+
+    
+
+    
+
+    
+    <li>
+        <details>
+            <summary>
+                <a href="https://docker-runner.docs.drone.io/questions/">Questions</a>
+            </summary>
+            <ul>
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/questions/usage/how-to-limit-concurrency/"></a>
+    </li>
+    
+
+            
+
+            
+            </ul>
+        </details>
+    </li>
+    
+
+    </ul>
+    
+</nav>
+
+</section>
+
+    <main>
+        <article>
+            <header>
+                <div class="breadcrumb">
+    <div class="crumb">
+        <a href="https://docker-runner.docs.drone.io/">Docker runner</a>
+    </div>
+    
+        <div class="crumb">
+            <a href="https://docker-runner.docs.drone.io/configuration/">Configuration</a>
+        </div>
+        
+</div>
+
+                <h1>Plugins</h1>
+            </header>
+            <section class="content">
+
+<p>Plugins are docker containers that encapsulate commands, and can be shared and re-used in your pipeline. Use plugins to build and publish artifacts, send notifications, and more.</p>
+
+<p>Example Slack plugin:</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tbody><tr><td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="hl"><span class="lnt">12
+</span></span><span class="hl"><span class="lnt">13
+</span></span><span class="hl"><span class="lnt">14
+</span></span><span class="hl"><span class="lnt">15
+</span></span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">kind: pipeline
+type: docker
+name: default
+
+steps:
+- name: build
+  image: node
+  commands:
+  - npm install
+  - npm test
+
+<span class="hl">- name: notify
+</span><span class="hl">  image: plugins/slack
+</span><span class="hl">  settings:
+</span><span class="hl">    webhook: https://hooks.slack.com/services/...</span></code></pre></td></tr></tbody></table>
+</div>
+</div>
+
+<p>As you can see plugins are just Docker containers. Anyone can encapsulate logic, bundle as a Docker image, and publish to a Docker registry to share with their organization, or with the broader community.</p>
+
+<p></p><div class="alert info" role="alert">
+The Drone community owns the plugins/ namespace in Dockerhub. Any plugin prefixed with plugins/ is actively maintained and vetted by community members.
+</div>
+<p></p>
+
+<div class="alert info" role="alert">
+The Drone community plugins in the plugins/ namespace are maintained by the community. Community plugins are not subject to our Enterprise support policy or service level agreements.
+</div>
+
+
+<h1 id="secrets">Secrets</h1>
+
+<p>Drone provides the ability to source any configuration parameter from a named secret using the <code>from_secret</code> syntax.</p>
+
+<p>Example Slack plugin using secrets:</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tbody><tr><td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text"><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="hl"><span class="lnt">15
+</span></span><span class="hl"><span class="lnt">16
+</span></span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">steps:
+- name: build
+  image: node
+  commands:
+  - npm install
+  - npm test
+
+- name: notify
+  image: plugins/slack
+  settings:
+<span class="hl">    webhook:
+</span><span class="hl">      from_secret: webhook</span></code></pre></td></tr></tbody></table>
+</div>
+</div>
+
+<p>Example NPM plugin using secrets:</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tbody><tr><td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text"><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="hl"><span class="lnt">15
+</span></span><span class="hl"><span class="lnt">16
+</span></span><span class="hl"><span class="lnt">17
+</span></span><span class="hl"><span class="lnt">18
+</span></span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">steps:
+- name: build
+  image: node
+  commands:
+  - npm install
+  - npm test
+
+- name: publish
+  image: plugins/npm
+  settings:
+<span class="hl">    username:
+</span><span class="hl">      from_secret: username
+</span><span class="hl">    password:
+</span><span class="hl">      from_secret: password</span></code></pre></td></tr></tbody></table>
+</div>
+</div>
+
+<h1 id="registry">Registry</h1>
+
+<p>The community maintains a public registry of Open Source plugins. You can browse the plugin registry at <a href="http://plugins.drone.io/">plugins.drone.io</a>.</p>
+
+<p>
+<a href="http://plugins.drone.io/" class="reference">
+    <span class="icon"></span>
+    <span class="name">
+Plugin Registry
+</span>
+</a></p>
+</section>
+            <footer class="next-prev">
+    
+    <a href="https://docker-runner.docs.drone.io/configuration/steps/" class="prev">
+        <span class="icon"></span>
+        <span class="type">Previous</span>
+        <span class="name">Steps</span>
+    </a>
+    
+
+    
+    <a href="https://docker-runner.docs.drone.io/configuration/services/" class="next">
+        <span class="type">Next</span>
+        <span class="name">Services</span>
+        <span class="icon"></span>
+    </a>
+    
+</footer>
+        </article>
+
+        <aside>
+    
+    <nav class="table-of-contents">
+        <header>Contents</header>
+        <nav id="TableOfContents">
+<ul>
+<li><a href="https://docker-runner.docs.drone.io/configuration/plugins/#secrets">Secrets</a></li>
+<li><a href="https://docker-runner.docs.drone.io/configuration/plugins/#registry">Registry</a></li>
+</ul>
+</nav>
+    </nav>
+    
+</aside>
+    </main>
+    
+<div class="overlay" aria-hidden="true"></div>
+
+
+<script>
+    function toggle(el) {
+        if (el.classList.contains("open")) {
+            el.classList.remove("open");
+        } else {
+            el.classList.add("open");
+        }
+    };
+    function toggleSidebar(e) {
+        toggle(document.querySelector(".sidebar"));
+        toggle(document.querySelector(".overlay"));
+    }
+    document.querySelector(".overlay").addEventListener("click", toggleSidebar);
+    document.querySelector("header .menu").addEventListener("click", toggleSidebar);
+    document.querySelector(".sidebar header button").addEventListener("click", toggleSidebar);
+</script>
+
+
+<script src="./Plugins _ Drone_files/autocomplete.js"></script>
+<script src="./Plugins _ Drone_files/fuse.js"></script>
+<script>
+var options = {
+  shouldSort: true,
+  tokenize: false,
+  threshold: 0.6,
+  location: 0,
+  distance: 100,
+  maxPatternLength: 32,
+  minMatchCharLength: 1,
+  keys: [
+    "title",
+    "tags",
+    "content"
+  ]
+};
+
+var index;
+autocomplete('#search-input', {
+    hint: true,
+    debounce: 250,
+    cache: true,
+    debug: window.location.hostname === "localhost",
+}, [
+    {
+        displayKey: function(suggestion) {
+            return suggestion.title
+        },
+        source: function(query, callback) {
+            if (!index) {
+                fetch("/index.json")
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(items) {
+                    index = new Fuse(items, options);
+                    var results = index.search(query);
+                    callback(results && results.slice(0, 5));
+                });
+            } else {
+                var results = index.search(query);
+                callback(results && results.slice(0, 5));
+            }
+        }
+    }]).on('autocomplete:selected', function(event, suggestion, dataset) {
+        window.location.href = suggestion.permalink;
+    });
+</script>
+
+  
+
+</body></html>

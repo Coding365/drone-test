@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://docker-runner.docs.drone.io/configuration/steps/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Steps | Drone</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="copyright" content="">
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://docker-runner.docs.drone.io/favicon.png">
+<link rel="stylesheet" href="./Steps _ Drone_files/docsearch.min.css">
+<link rel="stylesheet" href="./Steps _ Drone_files/style.css">
+<link rel="stylesheet" href="./Steps _ Drone_files/css">
+
+
+
+
+
+  </head>
+  <body>
+        <header class="header">
+        <div class="branding">
+            <button class="menu" aria-hidden="true"></button>
+            <a class="logo" href="https://docker-runner.docs.drone.io/" aria-label="Documentation">
+                <img src="./Steps _ Drone_files/logo.svg">
+            </a>
+        </div>
+        <div class="search">
+            <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input type="text" class="aa-hint" readonly="" aria-hidden="true" autocomplete="off" spellcheck="false" tabindex="-1" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(255, 255, 255, 0.1);"><input type="text" id="search-input" placeholder="Search the Drone Docker Runner documentation ..." class="aa-input" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="both" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: system-ui; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="aa-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="aa-dataset-1"></div></span></span>
+        </div>
+    </header>
+    <section class="sidebar">
+    <header aria-hidden="true">
+        <button class="close"></button>
+    </header>
+    <div class="back">
+        <a href="https://docs.drone.io/">Main Documentation</a>
+    </div>
+    <div class="title">
+        <a href="https://docker-runner.docs.drone.io/">Docker runner</a>
+    </div>
+    
+
+
+
+
+
+<nav class="tree">
+
+    <ul>
+    
+    
+
+    
+
+    
+
+    
+    <li>
+        <details>
+            <summary>
+                <a href="https://docker-runner.docs.drone.io/installation/">Installation</a>
+            </summary>
+            <ul>
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/installation/install_linux/">Install on Linux</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/installation/install_windows/">Install on Windows</a>
+    </li>
+    
+
+            
+
+            
+            
+    
+
+    
+
+    
+    <li class="hide_children">
+        <a href="https://docker-runner.docs.drone.io/installation/reference/">Configuration Reference</a>
+    </li>
+    
+
+            
+            </ul>
+        </details>
+    </li>
+    
+
+    </ul>
+    
+    <ul>
+    
+    
+
+    
+
+    
+
+    
+    <li>
+        <details open="">
+            <summary>
+                <a href="https://docker-runner.docs.drone.io/configuration/">Configuration</a>
+            </summary>
+            <ul>
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/overview/">Overview</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/trigger/">Triggers</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/platform/">Platform</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/workspace/">Workspace</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/cloning/">Cloning</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li class="selected active">
+        <a href="https://docker-runner.docs.drone.io/configuration/steps/">Steps</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/plugins/">Plugins</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/services/">Services</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/images/">Images</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/parallelism/">Parallelism</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/conditions/">Conditions</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/routing/">Routing</a>
+    </li>
+    
+
+            
+
+            
+            
+    
+
+    
+
+    
+
+    
+    <li>
+        <details>
+            <summary>
+                <a href="https://docker-runner.docs.drone.io/configuration/environment/">Environment</a>
+            </summary>
+            <ul>
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/environment/overview/">Environment</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/environment/substitution/">Substitution</a>
+    </li>
+    
+
+            
+
+            
+            
+    
+
+    
+
+    
+    <li class="hide_children">
+        <a href="https://docker-runner.docs.drone.io/configuration/environment/variables/">Environment Reference</a>
+    </li>
+    
+
+            
+            </ul>
+        </details>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+
+    
+    <li>
+        <details>
+            <summary>
+                <a href="https://docker-runner.docs.drone.io/configuration/volumes/">Volumes</a>
+            </summary>
+            <ul>
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/volumes/host/">Host Volumes</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/volumes/temporary/">Temporary Volumes</a>
+    </li>
+    
+
+            
+
+            
+            </ul>
+        </details>
+    </li>
+    
+
+            
+            </ul>
+        </details>
+    </li>
+    
+
+    </ul>
+    
+    <ul>
+    
+    
+
+    
+
+    
+    <li class="hide_children">
+        <a href="https://docker-runner.docs.drone.io/specification/">Specification</a>
+    </li>
+    
+
+    </ul>
+    
+    <ul>
+    
+    
+
+    
+
+    
+
+    
+    <li>
+        <details>
+            <summary>
+                <a href="https://docker-runner.docs.drone.io/examples/">Examples</a>
+            </summary>
+            <ul>
+            
+
+            
+            
+    
+
+    
+
+    
+    <li class="hide_children">
+        <a href="https://docker-runner.docs.drone.io/examples/language/">Languages</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li class="hide_children">
+        <a href="https://docker-runner.docs.drone.io/examples/service/">Services</a>
+    </li>
+    
+
+            
+            </ul>
+        </details>
+    </li>
+    
+
+    </ul>
+    
+    <ul>
+    
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/support/">Support</a>
+    </li>
+    
+
+    </ul>
+    
+    <ul>
+    
+    
+
+    
+
+    
+
+    
+    <li>
+        <details>
+            <summary>
+                <a href="https://docker-runner.docs.drone.io/questions/">Questions</a>
+            </summary>
+            <ul>
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/questions/usage/how-to-limit-concurrency/"></a>
+    </li>
+    
+
+            
+
+            
+            </ul>
+        </details>
+    </li>
+    
+
+    </ul>
+    
+</nav>
+
+</section>
+
+    <main>
+        <article>
+            <header>
+                <div class="breadcrumb">
+    <div class="crumb">
+        <a href="https://docker-runner.docs.drone.io/">Docker runner</a>
+    </div>
+    
+        <div class="crumb">
+            <a href="https://docker-runner.docs.drone.io/configuration/">Configuration</a>
+        </div>
+        
+</div>
+
+                <h1>Steps</h1>
+            </header>
+            <section class="content">
+
+<p>Pipeline steps are defined as a series of shell commands. The commands are executed inside the root directory of your git repository. The root of your git repository, also called the workspace, is shared by all steps in your pipeline.</p>
+
+<p>Example configuration:</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tbody><tr><td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">kind: pipeline
+type: docker
+name: default
+
+steps:
+- name: backend
+  image: golang
+  commands:
+  - go build
+  - go test
+
+- name: frontend
+  image: node
+  commands:
+  - npm install
+  - npm test</code></pre></td></tr></tbody></table>
+</div>
+</div>
+
+<h1 id="commands">Commands</h1>
+
+<p>The commands are executed inside the root directory of your git repository. The root of your git repository, also called the workspace, is shared by all steps in your pipeline. This allows file artifacts to persist between steps.</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tbody><tr><td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text"><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">steps:
+- name: backend
+  image: golang
+  commands:
+  - go build
+  - go test</code></pre></td></tr></tbody></table>
+</div>
+</div>
+
+<p>The above commands are converted to a simple shell script. The commands in the above example are roughly converted to the below script:</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tbody><tr><td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">#!/bin/sh
+set -e
+set -x
+
+go build
+go test</code></pre></td></tr></tbody></table>
+</div>
+</div>
+
+<p>The above shell script is then executed as the docker entrypoint. The below docker command is an (incomplete) example of how the script is executed:</p>
+
+<pre><code>docker run --entrypoint=build.sh golang
+</code></pre>
+
+<p>The container exit code is used to determine whether the step is passing or failing. If a command returns a non-zero exit code, the step is marked as failing. The overall pipeline status is also marked as failing, and remaining pipeline steps are skipped (<em>unless explicitly configured to run on failure</em>).</p>
+
+<h1 id="environment">Environment</h1>
+
+<p>The environment section provides the ability to define environment variables scoped to individual pipeline steps.</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tbody><tr><td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text"><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="hl"><span class="lnt">7
+</span></span><span class="hl"><span class="lnt">8
+</span></span><span class="hl"><span class="lnt">9
+</span></span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">steps:
+- name: backend
+<span class="hl">  image: golang
+</span><span class="hl">  environment:
+</span><span class="hl">    GOOS: linux
+</span>    GOARCH: amd64
+  commands:
+  - go build
+  - go test</code></pre></td></tr></tbody></table>
+</div>
+</div>
+
+<p>See the Environment article for additional details:</p>
+
+
+<a href="https://docker-runner.docs.drone.io/configuration/environment/overview/" class="reference">
+    <span class="icon"></span>
+    <span class="name">Environment</span>
+    <span class="path">/configuration/environment/overview</span>
+</a>
+
+<h1 id="plugins">Plugins</h1>
+
+<p>Plugins are docker containers that encapsulate commands, and can be shared and re-used in your pipeline. Examples of plugins include sending Slack notifications, building and publishing Docker images, and uploading artifacts to S3.</p>
+
+<p>Example Slack plugin:</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tbody><tr><td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text"><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">- name: notify
+  image: plugins/slack
+  settings:
+    webhook: https://hooks.slack.com/services/...</code></pre></td></tr></tbody></table>
+</div>
+</div>
+
+<p>The great thing about plugins is they are just Docker containers. This means you can easily encapsulate logic, bundle in a Docker container, and share your plugin with your organization or with the broader community.</p>
+
+
+<a href="http://plugins.drone.io/" class="reference">
+    <span class="icon"></span>
+    <span class="name">
+Plugin Registry
+</span>
+</a>
+
+<h1 id="conditions">Conditions</h1>
+
+<p>The when section provides the ability to conditionally limit the execution of steps at runtime. The below example limits step execution by branch, however, you can limit execution by event, reference, status and more.</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tbody><tr><td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text"><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span><span class="lnt">10
+</span><span class="hl"><span class="lnt">11
+</span></span><span class="hl"><span class="lnt">12
+</span></span><span class="hl"><span class="lnt">13
+</span></span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">steps:
+- name: backend
+  image: golang
+  commands:
+  - go build
+  - go test
+<span class="hl">  when:
+</span><span class="hl">    branch:
+</span><span class="hl">    - master</span></code></pre></td></tr></tbody></table>
+</div>
+</div>
+
+<p>Use the status condition to override the default runtime behavior and execute steps even when the pipeline status is failure:</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tbody><tr><td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text"><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="hl"><span class="lnt">19
+</span></span><span class="hl"><span class="lnt">20
+</span></span><span class="hl"><span class="lnt">21
+</span></span><span class="hl"><span class="lnt">22
+</span></span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">- name: notify
+  image: plugins/slack
+  settings:
+    webhook: https://hooks.slack.com/services/...
+<span class="hl">  when:
+</span><span class="hl">    status:
+</span><span class="hl">    - failure
+</span><span class="hl">    - success</span></code></pre></td></tr></tbody></table>
+</div>
+</div>
+
+<p>See the Conditions article for additional details:</p>
+
+
+<a href="https://docker-runner.docs.drone.io/configuration/conditions/" class="reference">
+    <span class="icon"></span>
+    <span class="name">Conditions</span>
+    <span class="path">/configuration/conditions</span>
+</a>
+
+<h1 id="failure">Failure</h1>
+
+<p>The failure attribute lets you customize how the system handles failure of an individual step. This can be useful if you want to allow a step to fail without failing the overall pipeline.</p>
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tbody><tr><td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text"><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="hl"><span class="lnt">8
+</span></span><span class="lnt">9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">steps:
+- name: backend
+  image: golang
+<span class="hl">  failure: ignore
+</span>  commands:
+  - go build
+  - go test</code></pre></td></tr></tbody></table>
+</div>
+</div>
+
+<h1 id="detach">Detach</h1>
+
+<p>The detach attribute lets execute the pipeline step in the background. The runner starts the step, detaches and runs in the background, and immediately proceeds to the next step.</p>
+
+<p>The target use case for this feature is to start a service or daemon, and then execute unit tests against the service in subsequent steps.</p>
+
+<div class="alert info" role="alert">
+Note that a detached step cannot fail the pipeline. The runner may ignore the exit code.
+</div>
+
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tbody><tr><td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text"><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="hl"><span class="lnt">8
+</span></span><span class="lnt">9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">steps:
+- name: backend
+  image: golang
+<span class="hl">  detach: true
+</span>  commands:
+  - go build
+  - go test
+  - go run main.go -http=:3000</code></pre></td></tr></tbody></table>
+</div>
+</div>
+
+<h1 id="privileged-mode">Privileged Mode</h1>
+
+<p>The privileged attribute runs the container with escalated privileges. This is the equivalent of running a container with the <code>--privileged</code> flag.</p>
+
+<div class="alert security" role="alert">
+This setting is only available to trusted repositories. Privileged mode effectively grants the container root access to your host machine. Please use with caution.
+</div>
+
+
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tbody><tr><td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text"><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="hl"><span class="lnt">8
+</span></span><span class="lnt">9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-text" data-lang="text">steps:
+- name: backend
+  image: golang
+<span class="hl">  privileged: true
+</span>  commands:
+  - go build
+  - go test
+  - go run main.go -http=:3000</code></pre></td></tr></tbody></table>
+</div>
+</div>
+</section>
+            <footer class="next-prev">
+    
+    <a href="https://docker-runner.docs.drone.io/configuration/cloning/" class="prev">
+        <span class="icon"></span>
+        <span class="type">Previous</span>
+        <span class="name">Cloning</span>
+    </a>
+    
+
+    
+    <a href="https://docker-runner.docs.drone.io/configuration/plugins/" class="next">
+        <span class="type">Next</span>
+        <span class="name">Plugins</span>
+        <span class="icon"></span>
+    </a>
+    
+</footer>
+        </article>
+
+        <aside>
+    
+    <nav class="table-of-contents">
+        <header>Contents</header>
+        <nav id="TableOfContents">
+<ul>
+<li><a href="https://docker-runner.docs.drone.io/configuration/steps/#commands">Commands</a></li>
+<li><a href="https://docker-runner.docs.drone.io/configuration/steps/#environment">Environment</a></li>
+<li><a href="https://docker-runner.docs.drone.io/configuration/steps/#plugins">Plugins</a></li>
+<li><a href="https://docker-runner.docs.drone.io/configuration/steps/#conditions">Conditions</a></li>
+<li><a href="https://docker-runner.docs.drone.io/configuration/steps/#failure">Failure</a></li>
+<li><a href="https://docker-runner.docs.drone.io/configuration/steps/#detach">Detach</a></li>
+<li><a href="https://docker-runner.docs.drone.io/configuration/steps/#privileged-mode">Privileged Mode</a></li>
+</ul>
+</nav>
+    </nav>
+    
+</aside>
+    </main>
+    
+<div class="overlay" aria-hidden="true"></div>
+
+
+<script>
+    function toggle(el) {
+        if (el.classList.contains("open")) {
+            el.classList.remove("open");
+        } else {
+            el.classList.add("open");
+        }
+    };
+    function toggleSidebar(e) {
+        toggle(document.querySelector(".sidebar"));
+        toggle(document.querySelector(".overlay"));
+    }
+    document.querySelector(".overlay").addEventListener("click", toggleSidebar);
+    document.querySelector("header .menu").addEventListener("click", toggleSidebar);
+    document.querySelector(".sidebar header button").addEventListener("click", toggleSidebar);
+</script>
+
+
+<script src="./Steps _ Drone_files/autocomplete.js"></script>
+<script src="./Steps _ Drone_files/fuse.js"></script>
+<script>
+var options = {
+  shouldSort: true,
+  tokenize: false,
+  threshold: 0.6,
+  location: 0,
+  distance: 100,
+  maxPatternLength: 32,
+  minMatchCharLength: 1,
+  keys: [
+    "title",
+    "tags",
+    "content"
+  ]
+};
+
+var index;
+autocomplete('#search-input', {
+    hint: true,
+    debounce: 250,
+    cache: true,
+    debug: window.location.hostname === "localhost",
+}, [
+    {
+        displayKey: function(suggestion) {
+            return suggestion.title
+        },
+        source: function(query, callback) {
+            if (!index) {
+                fetch("/index.json")
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(items) {
+                    index = new Fuse(items, options);
+                    var results = index.search(query);
+                    callback(results && results.slice(0, 5));
+                });
+            } else {
+                var results = index.search(query);
+                callback(results && results.slice(0, 5));
+            }
+        }
+    }]).on('autocomplete:selected', function(event, suggestion, dataset) {
+        window.location.href = suggestion.permalink;
+    });
+</script>
+
+  
+
+</body></html>

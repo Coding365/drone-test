@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://docker-runner.docs.drone.io/examples/language/java/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Java | Drone</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="copyright" content="">
+
+<link rel="icon" type="image/png" sizes="32x32" href="https://docker-runner.docs.drone.io/favicon.png">
+<link rel="stylesheet" href="./Java _ Drone_files/docsearch.min.css">
+<link rel="stylesheet" href="./Java _ Drone_files/style.css">
+<link rel="stylesheet" href="./Java _ Drone_files/css">
+
+
+
+
+
+  </head>
+  <body>
+        <header class="header">
+        <div class="branding">
+            <button class="menu" aria-hidden="true"></button>
+            <a class="logo" href="https://docker-runner.docs.drone.io/" aria-label="Documentation">
+                <img src="./Java _ Drone_files/logo.svg">
+            </a>
+        </div>
+        <div class="search">
+            <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input type="text" class="aa-hint" readonly="" aria-hidden="true" autocomplete="off" spellcheck="false" tabindex="-1" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: none 0% 0% / auto repeat scroll padding-box border-box rgba(255, 255, 255, 0.1);"><input type="text" id="search-input" placeholder="Search the Drone Docker Runner documentation ..." class="aa-input" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="both" aria-expanded="false" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: system-ui; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre><span class="aa-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="aa-dataset-1"></div></span></span>
+        </div>
+    </header>
+    <section class="sidebar">
+    <header aria-hidden="true">
+        <button class="close"></button>
+    </header>
+    <div class="back">
+        <a href="https://docs.drone.io/">Main Documentation</a>
+    </div>
+    <div class="title">
+        <a href="https://docker-runner.docs.drone.io/">Docker runner</a>
+    </div>
+    
+
+
+
+
+
+<nav class="tree">
+
+    <ul>
+    
+    
+
+    
+
+    
+
+    
+    <li>
+        <details>
+            <summary>
+                <a href="https://docker-runner.docs.drone.io/installation/">Installation</a>
+            </summary>
+            <ul>
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/installation/install_linux/">Install on Linux</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/installation/install_windows/">Install on Windows</a>
+    </li>
+    
+
+            
+
+            
+            
+    
+
+    
+
+    
+    <li class="hide_children">
+        <a href="https://docker-runner.docs.drone.io/installation/reference/">Configuration Reference</a>
+    </li>
+    
+
+            
+            </ul>
+        </details>
+    </li>
+    
+
+    </ul>
+    
+    <ul>
+    
+    
+
+    
+
+    
+
+    
+    <li>
+        <details>
+            <summary>
+                <a href="https://docker-runner.docs.drone.io/configuration/">Configuration</a>
+            </summary>
+            <ul>
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/overview/">Overview</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/trigger/">Triggers</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/platform/">Platform</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/workspace/">Workspace</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/cloning/">Cloning</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/steps/">Steps</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/plugins/">Plugins</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/services/">Services</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/images/">Images</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/parallelism/">Parallelism</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/conditions/">Conditions</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/routing/">Routing</a>
+    </li>
+    
+
+            
+
+            
+            
+    
+
+    
+
+    
+
+    
+    <li>
+        <details>
+            <summary>
+                <a href="https://docker-runner.docs.drone.io/configuration/environment/">Environment</a>
+            </summary>
+            <ul>
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/environment/overview/">Environment</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/environment/substitution/">Substitution</a>
+    </li>
+    
+
+            
+
+            
+            
+    
+
+    
+
+    
+    <li class="hide_children">
+        <a href="https://docker-runner.docs.drone.io/configuration/environment/variables/">Environment Reference</a>
+    </li>
+    
+
+            
+            </ul>
+        </details>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+
+    
+    <li>
+        <details>
+            <summary>
+                <a href="https://docker-runner.docs.drone.io/configuration/volumes/">Volumes</a>
+            </summary>
+            <ul>
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/volumes/host/">Host Volumes</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/configuration/volumes/temporary/">Temporary Volumes</a>
+    </li>
+    
+
+            
+
+            
+            </ul>
+        </details>
+    </li>
+    
+
+            
+            </ul>
+        </details>
+    </li>
+    
+
+    </ul>
+    
+    <ul>
+    
+    
+
+    
+
+    
+    <li class="hide_children">
+        <a href="https://docker-runner.docs.drone.io/specification/">Specification</a>
+    </li>
+    
+
+    </ul>
+    
+    <ul>
+    
+    
+
+    
+
+    
+
+    
+    <li>
+        <details open="">
+            <summary>
+                <a href="https://docker-runner.docs.drone.io/examples/">Examples</a>
+            </summary>
+            <ul>
+            
+
+            
+            
+    
+
+    
+
+    
+    <li class="selected active hide_children">
+        <a href="https://docker-runner.docs.drone.io/examples/language/">Languages</a>
+    </li>
+    
+
+            
+            
+    
+
+    
+
+    
+    <li class="hide_children">
+        <a href="https://docker-runner.docs.drone.io/examples/service/">Services</a>
+    </li>
+    
+
+            
+            </ul>
+        </details>
+    </li>
+    
+
+    </ul>
+    
+    <ul>
+    
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/support/">Support</a>
+    </li>
+    
+
+    </ul>
+    
+    <ul>
+    
+    
+
+    
+
+    
+
+    
+    <li>
+        <details>
+            <summary>
+                <a href="https://docker-runner.docs.drone.io/questions/">Questions</a>
+            </summary>
+            <ul>
+            
+            
+    
+
+    
+
+    
+    <li>
+        <a href="https://docker-runner.docs.drone.io/questions/usage/how-to-limit-concurrency/"></a>
+    </li>
+    
+
+            
+
+            
+            </ul>
+        </details>
+    </li>
+    
+
+    </ul>
+    
+</nav>
+
+</section>
+
+    <main>
+        <article>
+            <header>
+                <div class="breadcrumb">
+    <div class="crumb">
+        <a href="https://docker-runner.docs.drone.io/">Docker runner</a>
+    </div>
+    
+        <div class="crumb">
+            <a href="https://docker-runner.docs.drone.io/examples/">Examples</a>
+        </div>
+        
+        <div class="crumb">
+            <a href="https://docker-runner.docs.drone.io/examples/language/">Languages</a>
+        </div>
+        
+</div>
+
+                <h1>Java</h1>
+            </header>
+            <section class="content">
+
+<h1 id="java-example">Java Example</h1>
+
+<p>This guide covers configuring continuous integration pipelines for Java projects. If you’re new to Drone please read our Tutorial and build configuration guides first.</p>
+
+<h1 id="build-and-test">Build and Test</h1>
+
+<p>In the below example we demonstrate a pipeline that executes <code>mvn install</code> and <code>mvn test</code> commands. These commands are executed inside a Docker container, downloaded at runtime from DockerHub.</p>
+
+<pre><code>kind: pipeline
+name: default
+
+steps:
+- name: test
+  image: maven:3-jdk-10
+  commands:
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+  - mvn test -B
+</code></pre>
+
+<p>Please note that you can use any Docker image in your pipeline from any Docker registry. You can use the official <a href="https://hub.docker.com/r/_/maven/">maven</a> or <a href="https://hub.docker.com/r/_/openjdk/">openjdk</a> images, or your can bring your own.</p>
+</section>
+            <footer class="next-prev">
+    
+    <a href="https://docker-runner.docs.drone.io/examples/language/haxe/" class="prev">
+        <span class="icon"></span>
+        <span class="type">Previous</span>
+        <span class="name">Haxe</span>
+    </a>
+    
+
+    
+    <a href="https://docker-runner.docs.drone.io/examples/language/maven/" class="next">
+        <span class="type">Next</span>
+        <span class="name">Maven</span>
+        <span class="icon"></span>
+    </a>
+    
+</footer>
+        </article>
+
+        <aside>
+    
+</aside>
+    </main>
+    
+<div class="overlay" aria-hidden="true"></div>
+
+
+<script>
+    function toggle(el) {
+        if (el.classList.contains("open")) {
+            el.classList.remove("open");
+        } else {
+            el.classList.add("open");
+        }
+    };
+    function toggleSidebar(e) {
+        toggle(document.querySelector(".sidebar"));
+        toggle(document.querySelector(".overlay"));
+    }
+    document.querySelector(".overlay").addEventListener("click", toggleSidebar);
+    document.querySelector("header .menu").addEventListener("click", toggleSidebar);
+    document.querySelector(".sidebar header button").addEventListener("click", toggleSidebar);
+</script>
+
+
+<script src="./Java _ Drone_files/autocomplete.js"></script>
+<script src="./Java _ Drone_files/fuse.js"></script>
+<script>
+var options = {
+  shouldSort: true,
+  tokenize: false,
+  threshold: 0.6,
+  location: 0,
+  distance: 100,
+  maxPatternLength: 32,
+  minMatchCharLength: 1,
+  keys: [
+    "title",
+    "tags",
+    "content"
+  ]
+};
+
+var index;
+autocomplete('#search-input', {
+    hint: true,
+    debounce: 250,
+    cache: true,
+    debug: window.location.hostname === "localhost",
+}, [
+    {
+        displayKey: function(suggestion) {
+            return suggestion.title
+        },
+        source: function(query, callback) {
+            if (!index) {
+                fetch("/index.json")
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(items) {
+                    index = new Fuse(items, options);
+                    var results = index.search(query);
+                    callback(results && results.slice(0, 5));
+                });
+            } else {
+                var results = index.search(query);
+                callback(results && results.slice(0, 5));
+            }
+        }
+    }]).on('autocomplete:selected', function(event, suggestion, dataset) {
+        window.location.href = suggestion.permalink;
+    });
+</script>
+
+  
+
+</body></html>
